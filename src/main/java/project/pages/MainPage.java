@@ -32,10 +32,10 @@ public class MainPage {
 //        click(hiddenLayersButton);
 //        return new HiddenLayersPage(driver, wait);
 //    }
-//    public ClassAttributePage openClassAttributePage() {
-//        click(classAttributeButton);
-//        return new ClassAttributePage(driver, wait);
-//    }
+    public ClassAttributePage openClassAttributePage() {
+        click(classAttributeButton);
+        return new ClassAttributePage(driver, wait);
+    }
 //    public DynamicIdPage openDynamicIdPage() {
 //        click(dynamicButtonTaskButton);
 //        return new DynamicIdPage(driver, wait);
@@ -44,15 +44,15 @@ public class MainPage {
 //        click(loadDelayButton);
 //        return new LoadDelayPage(driver, wait);
 //    }
-//    public AjaxDataPage openAjaxDataPage() {
-//        click(ajaxDataButton);
-//        return new AjaxDataPage(driver, wait);
-//    }
-//    public ScrollBarPage openScrollBarPage() {
-//        click(scrollBars);
-//        return new ScrollBarPage(driver, wait);
-//    }
-//    public ProgressBarPage openProgressBarPage() {
+    public AjaxDataPage openAjaxDataPage() {
+        click(ajaxDataButton);
+        return new AjaxDataPage(driver, wait);
+    }
+    public ScrollBarPage openScrollBarPage() {
+        click(scrollBars);
+        return new ScrollBarPage(driver, wait);
+    }
+//   public ProgressBarPage openProgressBarPage() {
 //        click(ProgressBarButton);
 //        return new ProgressBarPage(driver, wait);
 //    }
