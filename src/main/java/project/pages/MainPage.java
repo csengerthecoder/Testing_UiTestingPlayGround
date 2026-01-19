@@ -28,22 +28,22 @@ public class MainPage {
         Objects.requireNonNull(wait.until(ExpectedConditions.elementToBeClickable(locator))).click();
     }
 
-//    public HiddenLayersPage openHiddenLayersPage() {
-//        click(hiddenLayersButton);
-//        return new HiddenLayersPage(driver, wait);
-//    }
+    public HiddenLayersPage openHiddenLayersPage() {
+        click(hiddenLayersButton);
+        return new HiddenLayersPage(driver, wait);
+    }
     public ClassAttributePage openClassAttributePage() {
         click(classAttributeButton);
         return new ClassAttributePage(driver, wait);
     }
-//    public DynamicIdPage openDynamicIdPage() {
-//        click(dynamicButtonTaskButton);
-//        return new DynamicIdPage(driver, wait);
-//    }
-//    public LoadDelayPage openLoadDelayPage() {
-//        click(loadDelayButton);
-//        return new LoadDelayPage(driver, wait);
-//    }
+    public DynamicIdPage openDynamicIdPage() {
+        click(dynamicButtonTaskButton);
+        return new DynamicIdPage(driver, wait);
+    }
+    public LoadDelayPage openLoadDelayPage() {
+        click(loadDelayButton);
+        return new LoadDelayPage(driver, wait);
+    }
     public AjaxDataPage openAjaxDataPage() {
         click(ajaxDataButton);
         return new AjaxDataPage(driver, wait);
@@ -52,8 +52,8 @@ public class MainPage {
         click(scrollBars);
         return new ScrollBarPage(driver, wait);
     }
-//   public ProgressBarPage openProgressBarPage() {
-//        click(ProgressBarButton);
-//        return new ProgressBarPage(driver, wait);
-//    }
+   public ProgressBarPage openProgressBarPage() {
+        click(ProgressBarButton);
+        return new ProgressBarPage(driver, wait);
+    }
 }
