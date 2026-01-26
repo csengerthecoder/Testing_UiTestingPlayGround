@@ -19,6 +19,7 @@ public class MainPage {
     private final By scrollBars = By.linkText("Scrollbars");
     private final By ProgressBarButton = By.linkText("Progress Bar");
     private final By clientSideDelayButton = By.linkText("Client Side Delay");
+    private final By textInputButton = By.linkText("Text Input");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -60,5 +61,9 @@ public class MainPage {
     public ClientSideDelayPage openClientSideDelayPage() {
         click(clientSideDelayButton);
         return new ClientSideDelayPage(driver, wait);
+    }
+    public TextInputPage openTextInputPage() {
+        click(textInputButton);
+        return new TextInputPage(driver, wait);
     }
 }
