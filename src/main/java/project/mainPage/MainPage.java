@@ -23,6 +23,7 @@ public class MainPage {
     private final By textInputButton = By.linkText("Text Input");
     private final By dynamicTableButton = By.linkText("Dynamic Table");
     private final By verifyTextButton = By.linkText("Verify Text");
+    private final By sampleAppButton = By.linkText("Sample App");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -76,5 +77,9 @@ public class MainPage {
     public VerifyTextPage openVerifyTextPage() {
         click(verifyTextButton);
         return new VerifyTextPage(driver, wait);
+    }
+    public SampleAppPage openSampleAppPage() {
+        click(sampleAppButton);
+        return new SampleAppPage(driver, wait);
     }
 }
