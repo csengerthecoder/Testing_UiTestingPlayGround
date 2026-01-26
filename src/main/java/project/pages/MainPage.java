@@ -18,6 +18,7 @@ public class MainPage {
     private final By ajaxDataButton = By.linkText("AJAX Data");
     private final By scrollBars = By.linkText("Scrollbars");
     private final By ProgressBarButton = By.linkText("Progress Bar");
+    private final By clientSideDelayButton = By.linkText("Client Side Delay");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -52,8 +53,12 @@ public class MainPage {
         click(scrollBars);
         return new ScrollBarPage(driver, wait);
     }
-   public ProgressBarPage openProgressBarPage() {
+    public ProgressBarPage openProgressBarPage() {
         click(ProgressBarButton);
         return new ProgressBarPage(driver, wait);
+    }
+    public ClientSideDelayPage openClientSideDelayPage() {
+        click(clientSideDelayButton);
+        return new ClientSideDelayPage(driver, wait);
     }
 }
