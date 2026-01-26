@@ -1,6 +1,6 @@
 package tests.baseTest;
 
-import project.pages.MainPage;
+import project.mainPage.MainPage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;

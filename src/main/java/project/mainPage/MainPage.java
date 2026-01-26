@@ -1,9 +1,10 @@
-package project.pages;
+package project.mainPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import project.pages.*;
 
 import java.util.Objects;
 
@@ -21,6 +22,7 @@ public class MainPage {
     private final By clientSideDelayButton = By.linkText("Client Side Delay");
     private final By textInputButton = By.linkText("Text Input");
     private final By dynamicTableButton = By.linkText("Dynamic Table");
+    private final By verifyTextButton = By.linkText("Verify Text");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -70,5 +72,9 @@ public class MainPage {
     public DynamicTablePage openDynamicTablePage() {
         click(dynamicTableButton);
         return new DynamicTablePage(driver, wait);
+    }
+    public VerifyTextPage openVerifyTextPage() {
+        click(verifyTextButton);
+        return new VerifyTextPage(driver, wait);
     }
 }
