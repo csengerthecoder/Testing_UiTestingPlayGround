@@ -20,6 +20,7 @@ public class MainPage {
     private final By ProgressBarButton = By.linkText("Progress Bar");
     private final By clientSideDelayButton = By.linkText("Client Side Delay");
     private final By textInputButton = By.linkText("Text Input");
+    private final By dynamicTableButton = By.linkText("Dynamic Table");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -65,5 +66,9 @@ public class MainPage {
     public TextInputPage openTextInputPage() {
         click(textInputButton);
         return new TextInputPage(driver, wait);
+    }
+    public DynamicTablePage openDynamicTablePage() {
+        click(dynamicTableButton);
+        return new DynamicTablePage(driver, wait);
     }
 }
