@@ -26,6 +26,7 @@ public class MainPage {
     private final By sampleAppButton = By.linkText("Sample App");
     private final By mouseOverButton = By.linkText("Mouse Over");
     private final By nonBreakingSpaceButton = By.linkText("Non-Breaking Space");
+    private final By alertsButton = By.linkText("Alerts");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -91,5 +92,9 @@ public class MainPage {
     public NonBreakingSpacePage openNonBreakingSpacePage() {
         click(nonBreakingSpaceButton);
         return new NonBreakingSpacePage(driver, wait);
+    }
+    public AlertsPage openAlertsPage() {
+        click(alertsButton);
+        return new AlertsPage(driver, wait);
     }
 }
