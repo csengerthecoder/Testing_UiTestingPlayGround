@@ -34,6 +34,7 @@ public class ProgressBarPage {
             int finalValue = Integer.parseInt(finalAttr);
             System.out.println("Final value: " + finalValue);
 
+
             return finalValue >= 75 && finalValue <= 85;
         } catch (Exception e) {
             return false;
