@@ -28,6 +28,7 @@ public class MainPage {
     private final By nonBreakingSpaceButton = By.linkText("Non-Breaking Space");
     private final By alertsButton = By.linkText("Alerts");
     private final By animatedButtonButton = By.linkText("Animated Button");
+    private final By disabledInputButton = By.linkText("Disabled Input");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -101,5 +102,9 @@ public class MainPage {
     public AnimatedButtonPage openAnimatedButtonPage() {
         click(animatedButtonButton);
         return new AnimatedButtonPage(driver, wait);
+    }
+    public DisabledInputPage openDisabledInputPage() {
+        click(disabledInputButton);
+        return new DisabledInputPage(driver, wait);
     }
 }
