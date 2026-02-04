@@ -19,13 +19,10 @@ public class ScrollBarPage {
         this.wait = wait;
     }
 
-    public boolean scrollToButton() {
+    public boolean isScrolledToButton() {
         WebElement button =  driver.findElement(hiddenButton);
 
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
-                button
-        );
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'center'});", button);
 
         try {
             wait.until(ExpectedConditions.elementToBeClickable(button)).click();

@@ -10,7 +10,7 @@ public class ScrollBarPageTest extends BaseTest {
     @Test
     void scrollBarsTest() {
         ScrollBarPage scrollBarPage = mainPage.openScrollBarPage();
-        boolean isButtonCLicked = scrollBarPage.scrollToButton();
+        boolean isButtonCLicked = scrollBarPage.isScrolledToButton();
         Assertions.assertTrue(isButtonCLicked);
     }
 }

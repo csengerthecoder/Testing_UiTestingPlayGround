@@ -29,6 +29,7 @@ public class MainPage {
     private final By alertsButton = By.linkText("Alerts");
     private final By animatedButtonButton = By.linkText("Animated Button");
     private final By disabledInputButton = By.linkText("Disabled Input");
+    private final By clickPageButton = By.linkText("Click");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -106,5 +107,9 @@ public class MainPage {
     public DisabledInputPage openDisabledInputPage() {
         click(disabledInputButton);
         return new DisabledInputPage(driver, wait);
+    }
+    public ClickPage openClickPage() {
+        click(clickPageButton);
+        return new ClickPage(driver, wait);
     }
 }

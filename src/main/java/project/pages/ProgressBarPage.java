@@ -24,14 +24,14 @@ public class ProgressBarPage {
     public boolean isProgressBarStoppedCorrectly() {
         try {
             wait.until(driver -> {
-                String attr = driver.findElement(progressBar).getAttribute("aria-valuenow");
-                int value = Integer.parseInt(attr);
+                String attribute = driver.findElement(progressBar).getAttribute("aria-valuenow");
+                int value = Integer.parseInt(attribute);
                 return value >= 75;
             });
             driver.findElement(stopButton).click();
 
-            String finalAttr = driver.findElement(progressBar).getAttribute("aria-valuenow");
-            int finalValue = Integer.parseInt(finalAttr);
+            String finalAttribute = driver.findElement(progressBar).getAttribute("aria-valuenow");
+            int finalValue = Integer.parseInt(finalAttribute);
             System.out.println("Final value: " + finalValue);
 
 
