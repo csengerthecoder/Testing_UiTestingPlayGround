@@ -12,7 +12,7 @@ public class NonBreakingSpacePage {
 
 
 
-    public NonBreakingSpacePage(WebDriver driver,  WebDriverWait wait) {
+    public NonBreakingSpacePage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
     }

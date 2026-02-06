@@ -30,6 +30,7 @@ public class MainPage {
     private final By animatedButtonButton = By.linkText("Animated Button");
     private final By disabledInputButton = By.linkText("Disabled Input");
     private final By clickPageButton = By.linkText("Click");
+    private final By overlappedElementButton = By.linkText("Overlapped Element");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -111,5 +112,9 @@ public class MainPage {
     public ClickPage openClickPage() {
         click(clickPageButton);
         return new ClickPage(driver, wait);
+    }
+    public OverlappedElementPage openOverlappedElementPage() {
+        click(overlappedElementButton);
+        return new OverlappedElementPage(driver, wait);
     }
 }

@@ -13,7 +13,7 @@ public class ShadowDomPage {
 
     private final By copyButton = By.id("buttonCopy");
     private final By generateButton = By.id("buttonGenerate");
-    private final By inputField = By.id("editField"); // typical on this page
+    private final By inputField = By.id("editField");
     private final By shadowHost = By.cssSelector("guid-generator");
 
     public ShadowDomPage(WebDriver driver, WebDriverWait wait) {

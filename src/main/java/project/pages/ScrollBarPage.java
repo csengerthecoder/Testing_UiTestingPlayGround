@@ -12,7 +12,6 @@ public class ScrollBarPage {
     private WebDriver driver;
     private WebDriverWait wait;
     private final By hiddenButton = By.cssSelector(".btn.btn-primary");
-    private final By scrollBarDiv = By.cssSelector("div[style*='overflow-y: scroll']");
 
     public ScrollBarPage(WebDriver driver,  WebDriverWait wait) {
         this.driver = driver;
