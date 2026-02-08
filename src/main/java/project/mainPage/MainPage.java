@@ -32,6 +32,7 @@ public class MainPage {
     private final By clickPageButton = By.linkText("Click");
     private final By overlappedElementButton = By.linkText("Overlapped Element");
     private final By visibilityPage = By.linkText("Visibility");
+    private final By autoWaitPage = By.linkText("Auto Wait");
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
@@ -121,5 +122,9 @@ public class MainPage {
     public VisibilityPage openVisibilityPage() {
         click(visibilityPage);
         return new VisibilityPage(driver, wait);
+    }
+    public AutoWaitPage openAutoWaitPage() {
+        click(autoWaitPage);
+        return new AutoWaitPage(driver, wait);
     }
 }
